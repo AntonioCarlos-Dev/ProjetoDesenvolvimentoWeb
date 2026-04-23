@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.menu-esquedo {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo {
+    width: 25px;
+    height: auto;
+}
+
+.navegacao-principal {
+    display: flex;
+    gap: 25px;
+}
+
+.navegacao-principal a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 0.95rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.navegacao-principal a:hover {
+    color: #000000;
+}
+
+.seta {
+    font-size: 1.2rem;
+    line-height: 0;
+    position: relative;
+    top: -3px;
+}
+
+.menu-direito {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.link-entrar {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.btn-contorno {
+    text-decoration: none;
+    color: #000000;
+    border: 1px solid #000000;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.2s;
+}
+
+.btn-contorno:hover {
+    border-width: 2px;
+    padding: 11px 19px; 
+}
+
+.btn-preto {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background-color 0.2s;
+}
+
+.btn-preto:hover {
+    background-color: #333333;
+}
+
+.hero-section {
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: calc(100vh - 70px);
+    padding: 60px 40px;
+}
+
+.lado-texto {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 60px;
+}
+
+.lado-texto h1 {
+    font-size: 5rem;
+    font-weight: 500;
+    letter-spacing: -2px;
+    margin-bottom: 30px;
+}
+
+.lado-texto p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: #000000;
+    margin-bottom: 40px;
+    max-width: 650px;
+}
+
+.grupo-botoes {
+    display: flex;
+    gap: 15px;
+}
+
+.lado-grafico {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.ilustracao-css {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.forma-arco {
+    width: 280px;
+    height: 140px;
+    background-color: #0bac39;
+    border-bottom-left-radius: 140px;
+    border-bottom-right-radius: 140px;
+    border: 30px solid #282cf5;
+    border-top: none;
+}
+
+.forma-ponto {
+    width: 30px;
+    height: 12px;
+    background-color: #f200ff;
+    border-radius: 10px;
+}
+
+.forma-losango {
+    width: 180px;
+    height: 180px;
+    background-color: #5c1111;
+    border-radius: 20px;
+    transform: rotate(45deg);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.forma-losango::after {
+    content: '';
+    width: 80px;
+    height: 80px;
+    background-color: #d1f37e;
+    border-radius: 50%;
+}
+
+.forma-nuvem {
+    width: 200px;
+    height: 100px;
+    background-color: #55ff77;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    position: relative;
+    top: 20px;
+}
