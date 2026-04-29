@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0d0d0d;
+    color: #f4f4f4;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.8;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+header {
+    background-color: #000000;
+    padding: 20px 40px;
+    border-bottom: 1px solid #333;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: #d35400;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+nav a {
+    color: #cccccc;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 20px;
+    flex: 1;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+}
+
+.card-estilo, aside {
+    background-color: #111111;
+    padding: 30px;
+    border: 1px solid #222222;
+    border-radius: 8px;
+}
+
+.card-estilo h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.card-estilo time {
+    color: #888888;
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.card-estilo p {
+    color: #d1d1d1;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: #777777;
+    text-align: right;
+    font-style: italic;
+}
+
+aside {
+    height: fit-content;
+}
+
+aside h3 {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside li {
+    margin-bottom: 12px;
+}
+
+aside a {
+    color: #d35400;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+aside a:hover {
+    color: #ff6f00;
+}
+
+footer {
+    background-color: #000000;
+    color: #777777;
+    text-align: center;
+    padding: 30px 20px;
+    border-top: 1px solid #333;
+}
+
+footer strong {
+    color: #d35400;
+}
+
+@media (min-width: 768px) {
+    .conteudo-principal {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    main {
+        flex: 3;
+    }
+
+    aside {
+        flex: 1;
+    }
+}
